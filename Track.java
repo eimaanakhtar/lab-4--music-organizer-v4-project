@@ -13,6 +13,8 @@ public class Track
     private String title;
     // Where the track is stored.
     private String filename;
+    private int playCount;
+    private String genre;
     
     /**
      * Constructor for objects of class Track.
@@ -23,6 +25,10 @@ public class Track
     public Track(String artist, String title, String filename)
     {
         setDetails(artist, title, filename);
+        this.title = title;
+        this.artist = artist;
+        this.playCount = 0;
+        this.genre = "";
     }
     
     /**
@@ -63,6 +69,14 @@ public class Track
         return filename;
     }
         
+    public String getGenre() {
+        return genre;
+    }
+    
+    public void setgenre(String genre) {
+        this.genre = genre;
+    }
+    
     /**
      * Return details of the track: artist, title and file name.
      * @return The track's details.
@@ -70,6 +84,18 @@ public class Track
     public String getDetails()
     {
         return artist + ": " + title + " (file: " + filename + ")";
+    }
+    
+    public void resetPlayCount() {
+        playCount = 0;
+    }
+    
+    public void incrementPlayCount() {
+        playCount = 0;
+    }
+
+    public int getPlayCount() {
+        return playCount;
     }
     
     /**
