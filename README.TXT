@@ -20,3 +20,7 @@ play them. Just make sure the filename is of the expected format:
 
   artist name-track name.mp3
 
+part 4 
+Q29: Added playCount field to Track, with methods to reset, increment, and retrieve the count.
+Q30: Updated MusicOrganizer to increment playCount whenever a track is played.
+Q31: Added a 'genre' field to Track class. Provided an accessor (getGenre) and mutator (setGenre) method to read and update the genre.
